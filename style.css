@@ -112,32 +112,35 @@ line-height: 26px;
 background: #FF5400;
 color: #fff;
 }
-/* .banner button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 20px;
-    font-size: 1em;
-    border: none;
-    cursor: pointer;
-} */
 
 @media screen and (max-width: 600px) {
-    .banner {
-        padding: 50px 20px;
-    }
-
-    .banner h1 {
-        font-size: 2em;
-    }
-
-    .banner p {
-        font-size: 1em;
-    }
-
-    .banner input,
-    .banner button {
-        width: 100%;
-    }
+   .input-text{
+    display: grid;
+    width: 287px;
+    
+   }
+   .banner input{
+    width: 255px;
+height: 52px;
+flex-shrink: 0;
+   }
+   .banner h1{
+    color: #FFF;
+font-family: Mulish;
+font-size: 22px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+   }
+   .banner p {
+    color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 150% */
+   }
 }
 /* popular tours section */
 .popular-tours {
@@ -202,7 +205,29 @@ line-height: 26px; /* 162.5% */
 }
 
 
-
+@media screen and (max-width: 600px){
+    .popular-tours{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        /* width: 100%;
+        margin: 0 auto; */
+        padding: 50px;
+    }
+    .popular-tours-content{
+        flex: 1;
+        /* max-width: 600px; */
+        width: 100%;
+        margin-bottom: 43px;
+        
+    }
+    .popular-tours img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+        
+    }
+}
 
 
 
@@ -257,9 +282,26 @@ line-height: 26px; /* 162.5% */
     font-size: 1.5em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+    .destination-section {
+        padding: 50px;
+        text-align: center;
+    }
     .destination-row {
+        display: flex;
         flex-direction: column;
+    }
+    .destination img {
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .destination-row1{
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        margin-bottom: 30px;
     }
 }
 /* why choose us section  */
@@ -289,7 +331,7 @@ line-height: 26px; /* 162.5% */
 }
 
 .card {
-    width: 553x;
+    width: 553px;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -318,9 +360,19 @@ background: rgba(41, 206, 246, 0.05);
 }
 
 @media screen and (max-width: 768px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
     .card {
-        width: 80%;
-    }
+        width: 100%;
+        height: 290px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+    }  
 }
 /* newsletter section */
 .newsletter-section {
@@ -401,15 +453,53 @@ line-height: 26px; /* 162.5% */
     border-radius: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .newsletter-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         text-align: center;
+        
     }
-
+    .newsletter-content {
+      
+        width: 100%;
+        max-width: 100%;
+        border-radius: 16px;
+        border: 1px solid #FF5400;
+       padding: 25px 5px; 
+       margin: 0 auto;  
+    }
+    .newsletter-inputs {
+        display: grid;
+        gap: 10px;
+        margin-bottom: 20px;
+        
+    }
+    .newsletter-inputs input {
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px;
+         background: rgba(19, 19, 24, 0.05);
+    
+    }
     .newsletter-image {
-        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+       
     }
+    .newsletter-image img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 5px;
+    }
+    
+    
 }
 /* card design */
 
@@ -514,5 +604,5 @@ line-height: 26px; /* 162.5% */
 
 
 
-   
+
 }
